@@ -11,6 +11,7 @@ Una plantilla moderna de e-commerce construida con React + Vite + TypeScript + T
 - **Componentes Reutilizables**: UI components modulares y accesibles
 - **TypeScript**: Tipado fuerte para mejor desarrollo
 - **TailwindCSS**: Estilos utilitarios con tema personalizado
+- **GitHub Pages**: Configurado para despliegue automático
 
 ## 🛠️ Tecnologías
 
@@ -120,8 +121,34 @@ npm run build
 # Preview del build
 npm run preview
 
+# Deploy a GitHub Pages
+npm run deploy
+
 # Linting
 npm run lint
+```
+
+## 🌐 Despliegue en GitHub Pages
+
+### Opción 1: Automático (Recomendado)
+1. Sube tu código a GitHub
+2. Ve a **Settings** > **Pages** en tu repositorio
+3. Selecciona **GitHub Actions** como fuente
+4. El sitio se desplegará automáticamente en cada push a `main`
+
+### Opción 2: Manual
+```bash
+# Instalar gh-pages
+npm install --save-dev gh-pages
+
+# Hacer build y deploy
+npm run deploy
+```
+
+### URL del sitio
+Tu sitio estará disponible en:
+```
+https://[tu-usuario].github.io/[nombre-del-repo]
 ```
 
 ## 🎯 Funcionalidades Implementadas
